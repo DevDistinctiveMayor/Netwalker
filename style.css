@@ -1,0 +1,946 @@
+.navbar {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.divnav {
+  width: 96.1%;
+  background-color: rgb(255, 255, 255);
+  height: max-content;
+  padding: 10px;
+  box-shadow: 0px 5px 1px rgba(176, 175, 175, 0.263);
+  position: fixed;
+  margin-top: -5%;
+  z-index: 998;
+}
+
+.navbardiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+  gap: 4rem;
+}
+
+.navbardivnav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbardivnav2 {
+  display: flex;
+  gap: 0.5rem;
+  position: fixed;
+  right: -300px;
+  top: 3px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 998;
+}
+/* Disable body scrolling */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+.navbardivnav2.show {
+  transform: translateX(0);
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+}
+
+.handburgger {
+  height: 20px;
+  width: 30px;
+  margin-top: 0.5rem;
+}
+
+.navh3 {
+  margin-top: 0.5rem;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(102, 102, 102);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.notify {
+  height: 28px;
+  width: 27px;
+}
+
+.user {
+  height: 33px;
+  width: 33px;
+}
+
+.navh5 {
+  font-size: 14px;
+  margin-left: 4px;
+  margin-top: 0.5rem;
+  color: rgb(102, 102, 102);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.arrow_down {
+  height: 13px;
+  width: 12px;
+  margin-top: 0.7rem;
+  margin-left: 0.1rem;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  font-weight: 500;
+  margin-top: 3.5rem;
+  height: 750px;
+}
+
+.aside {
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 0.9rem;
+  margin-left: 2px;
+  box-shadow: 3px -3px 0px rgba(176, 175, 175, 0.263);
+  height: 450px;
+  overflow-y: auto;
+}
+
+.asideflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.asideflex2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.asidelogo {
+  width: 20px;
+  height: 20px;
+  margin-top: 1rem;
+}
+
+.asideicon {
+  width: 10px;
+  height: 12px;
+  margin-top: 1.2rem;
+}
+
+.underlineP {
+  position: relative;
+  display: inline-block;
+}
+
+.underlineP::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: brown;
+  left: 0;
+  bottom: -2px;
+}
+
+.section {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 0.9rem;
+  box-shadow: -4px -3px 0px rgba(176, 175, 175, 0.263);
+}
+
+.sectionnavh3 {
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(102, 102, 102, 0.811);
+  margin-top: -0.5rem;
+}
+.sectionflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionflex1 {
+  display: flex;
+  gap: 1rem;
+  margin-top: -0.7rem;
+}
+
+.sectionflex2 {
+  display: flex;
+  gap: 0.5rem;
+  color: rgba(130, 130, 130, 0.718);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sectionicon {
+  width: 14px;
+  height: 14px;
+  margin-top: 1.2rem;
+}
+
+.sectionnav div {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.sectionvital {
+  color: rgb(155, 10, 10);
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 14px;
+  background-color: #fff;
+  font-weight: 600;
+  border: 2px solid rgb(155, 10, 10);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sectionnavp {
+  color: white;
+  background-color: rgb(155, 10, 10);
+  padding: 0.2rem;
+  font-size: 14px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.prescribedtable {
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(102, 102, 102, 0.811);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 3px solid #f2f2f2;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #c1c1c17a;
+  color: rgba(102, 102, 102, 0.811);
+}
+.tableauto {
+  overflow: auto;
+  height: 220px;
+}
+.tabletd {
+  background-color: rgba(102, 102, 102, 0.738);
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 13px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.remove-button {
+  background-color: rgb(162, 12, 12);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.searchmedicine {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.search_label {
+  color: rgba(102, 102, 102, 0.811);
+  font-weight: 600;
+}
+.search_medicinebrand_1 {
+  height: 34px;
+  border-radius: 8px;
+  width: max-content;
+  border: none;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  margin-top: 0.3rem;
+  color: rgb(132, 132, 132);
+  padding-right: 3rem;
+}
+.search_medicinebrand_1::placeholder {
+  padding-left: 10px;
+}
+
+.textarea_1 {
+  display: none;
+}
+
+/* Show the medicine list when the 'show' class is added */
+.textarea_1.show {
+  display: block;
+}
+
+.textarea_1 {
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  padding: 3px;
+  padding-left: 13px;
+  border-radius: 8px;
+  width: 12.2rem;
+}
+
+.medicine-item p {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(102, 102, 102, 0.941);
+  padding: 5px;
+  margin-top: -13px;
+  cursor: pointer;
+}
+.close_textarea_1 {
+  margin-left: -13px;
+  border-bottom: 1pt solid rgba(104, 104, 104, 0.3);
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(104, 104, 104, 0.766);
+  margin-top: 2px;
+}
+
+.medicine-item_1:hover {
+  background-color: #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search_medicinebrand_2 {
+  height: 34px;
+  border-radius: 8px;
+  width: max-content;
+  border: none;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  margin-top: 0.3rem;
+  color: rgb(132, 132, 132);
+  padding-right: 3rem;
+}
+.search_medicinebrand_2::placeholder {
+  padding-left: 10px;
+}
+
+.textarea_2 {
+  display: none;
+}
+
+/* Show the medicine list when the 'show' class is added */
+.textarea_2.show {
+  display: block;
+}
+
+.textarea_2 {
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  padding: 3px;
+  padding-left: 13px;
+  border-radius: 8px;
+  width: 12.2rem;
+}
+
+.close_textarea_2 {
+  margin-left: -13px;
+  border-bottom: 1pt solid rgba(104, 104, 104, 0.3);
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(104, 104, 104, 0.766);
+  margin-top: 2px;
+}
+
+.medicine-item_2:hover {
+  background-color: #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search_medicinebrand_3 {
+  height: 34px;
+  border-radius: 8px;
+  width: max-content;
+  border: none;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  margin-top: 0.3rem;
+  color: rgb(132, 132, 132);
+  padding-right: 3rem;
+}
+.search_medicinebrand_3::placeholder {
+  padding-left: 10px;
+}
+
+.textarea_3 {
+  display: none;
+}
+
+/* Show the medicine list when the 'show' class is added */
+.textarea_3.show {
+  display: block;
+}
+
+.textarea_3 {
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  padding: 3px;
+  padding-left: 13px;
+  border-radius: 8px;
+  width: 12.2rem;
+}
+
+.close_textarea_3 {
+  margin-left: -13px;
+  border-bottom: 1pt solid rgba(104, 104, 104, 0.3);
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(104, 104, 104, 0.766);
+  margin-top: 2px;
+}
+
+.medicine-item_3:hover {
+  background-color: #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the split input */
+.split-input-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 34px;
+  border-radius: 8px;
+  width: 09rem;
+  border: none;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  margin-top: 0.3rem;
+}
+
+/* Styling for individual inputs inside the container */
+.split-input-container input {
+  width: 50%; /* Each input takes half the container */
+  padding: 10px;
+  border: none; 
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Remove focus outline */
+.split-input-container input:focus {
+  outline: none;
+}
+
+/* Optional: Add a dividing line between the inputs */
+.divider {
+  width: 10px;
+  height: 100%;
+  margin-top: 1rem;
+  font-weight: 600;
+
+}
+.dividerinput {
+  font-size: 10px;
+  color: rgb(118, 118, 118);
+}
+
+.dividerinput::placeholder {
+  font-size: 13px;
+  color: rgb(132, 132, 132);
+}
+
+.interval {
+  height: 34px;
+  border-radius: 8px;
+  width: max-content;
+  border: none;
+  box-shadow: 0px 0px 8px 2px rgba(176, 175, 175, 0.8);
+  margin-top: 0.3rem;
+  color: rgb(132, 132, 132);
+  padding-right: 3rem;
+}
+
+.add-to-table-btn {
+  color: white;
+  background-color: rgb(155, 10, 10);
+  padding: 0.5rem;
+  font-size: 14px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search_next {
+  background-color: rgb(155, 10, 10);
+  display: flex;
+  width: min-content;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search_next_icon {
+  width: 15px;
+  height: 15px;
+
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  margin-top: 2rem;
+  box-shadow: 2px 3px 4px 3px rgba(176, 175, 175, 0.263);
+  font-weight: 700;
+  font-size: 13px;
+  float: right;
+  width: 1100px;
+  color: rgba(102, 102, 102, 0.811);
+}
+.footer1 {
+  display: flex;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: -0.5rem auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0px;
+  margin: 17x 0px 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(102, 102, 102, 0.811);
+  margin-top: 13%;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1420px) {
+  .content-container {
+    margin-top: 3rem;
+  }
+  .divnav {
+    margin-top: -5%;
+  }
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+  .handburgger {
+    height: 15px;
+    width: 20px;
+  }
+  .navh3 {
+    margin-top: 0.3rem;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .aside {
+    width: 15%;
+  }
+  .notify {
+    height: 23px;
+    width: 21px;
+  }
+
+  .user {
+    height: 28px;
+    width: 27px;
+  }
+
+  .navh5 {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+
+  .arrow_down {
+    height: 10px;
+    width: 9px;
+  }
+
+  .section {
+    width: 82%;
+  }
+  footer {
+    float: none;
+    width: fit-content;
+  }
+  .footer-container {
+    margin: -0.5rem auto;
+  }
+  .footer-container p {
+    margin-top: 1rem;
+  }
+  .sectionflex2 {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .sectionflex3 {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .sectionicon {
+    width: 10px;
+    height: 10px;
+    margin-top: 0.9rem;
+  }
+  .search_medicinebrand {
+    width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .divnav {
+    margin-top: -6%;
+  }
+  .aside {
+    width: 20%;
+  }
+  .search_medicinebrand {
+    width: max-content;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .content-container {
+    margin-top: 3rem;
+  }
+  .divnav {
+    margin-top: -6.3%;
+  }
+}
+
+@media only screen and (max-width: 954px) {
+  .content-container {
+    margin-top: 2.7rem;
+  }
+  .divnav {
+    margin-top: -6.9%;
+  }
+  .aside {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-container {
+    margin-top: 3rem;
+  }
+  .divnav {
+    margin-top: -8.3%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content-container {
+    margin-top: 2.5rem;
+  }
+  .navbardivnav2 {
+    display: flex;
+    justify-content: center;
+    top: -7;
+    right: 0;
+    width: 210px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+  }
+
+  .navbardivnav2.show {
+    transform: translateX(0);
+  }
+
+  .handburgger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    top: 0.8rem;
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #3a3a3ac0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .handburgger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .handburgger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .handburgger.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .aside {
+    width: 60%;
+  }
+  .navh5 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  .notify {
+    height: 21px;
+    width: 21px;
+    margin-top: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .content-container {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    margin-top: 2rem;
+  }
+  .divnav {
+    margin-top: -10%;
+  }
+
+  .navh3 {
+    font-size: 18px;
+    margin-top: 7px;
+  }
+
+  .section {
+    width: 75%;
+    margin-top: 0.9rem;
+  }
+  .sectionflex2 {
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .sectionflex3 {
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: -0.2rem;
+  }
+  .footer-links {
+    display: flex;
+  }
+  .footer-container {
+    display: block;
+  }
+
+  .footer-links li {
+    margin: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    margin-top: 2rem;
+  }
+  .divnav {
+    margin-top: -11%;
+  }
+
+  .handburgger {
+    right: 50px;
+  }
+
+  .content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+  .aside {
+    width: 90%;
+    height: 350px;
+    margin-top: 1.5rem;
+  }
+
+  .section {
+    width: 90%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .content-container {
+    margin-top: 1.5rem;
+  }
+  .divnav {
+    margin-top: -11%;
+  }
+
+  .aside {
+    width: 100%;
+    height: 300px;
+  }
+  .section {
+    width: 100%;
+    height: 400px;
+  }
+  .footer-links {
+    display: block;
+    gap: -0.6rem;
+  }
+}
+
+@media only screen and (max-width: 364px) {
+  .content-container {
+    margin-top: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 25px;
+  }
+  .handburgger {
+    right: 60px;
+  }
+
+  .aside {
+    width: 90%;
+    height: 350px;
+    margin-top: 2rem;
+  }
+  .section {
+    width: 100%;
+    height: 400px;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .divnav {
+    width: 90%;
+  }
+  .navbardiv {
+    margin-left: 1rem;
+  }
+  .asideflex2 {
+    margin-left: 1rem;
+  }
+  .sectionflex {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .navbardiv {
+    margin-left: 2rem;
+  }
+  .asideflex2 {
+    margin-left: 2rem;
+  }
+  .sectionflex {
+    margin-left: 2rem;
+  }
+}
+/* For larger screens (above 700px) show the menu normally */
+@media only screen and (min-width: 701px) {
+  .navbardivnav2 {
+    position: static;
+    transform: none;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .handburgger {
+    display: none; /* Hide the hamburger on larger screens */
+  }
+}
