@@ -95,12 +95,19 @@ function renderMedicineData(
 // Fetch data for the first API
 async function fetchMedicineData() {
   try {
+    // Show loading spinner before making the API request
+    document.getElementById("loading").style.display = "block";
+
+    // Fetch data from the API
     let response = await fetch(
       "https://cliniqueplushealthcare.com.ng/prescriptions/drug_class"
     );
     let data = await response.json();
 
-    // Render data for the first input
+    // Hide loading spinner after the response
+    document.getElementById("loading").style.display = "none";
+
+    // Render the fetched data
     renderMedicineData(
       data,
       "medicine-list-1",
@@ -112,6 +119,8 @@ async function fetchMedicineData() {
       "search_medicinebrand_2" // Focus on the second input after the first is filled
     );
   } catch (error) {
+    // Hide the spinner even if there's an error
+    document.getElementById("loading").style.display = "none";
     console.error("Error fetching the medicine data: ", error);
   }
 }
@@ -119,10 +128,16 @@ async function fetchMedicineData() {
 // Fetch data for the second API (based on selected medicine ID)
 async function fetchIntervalData(selectedMedicineId) {
   try {
+    // Show loading spinner before making the API request
+    document.getElementById("loading2").style.display = "block";
+
     let response = await fetch(
       `https://cliniqueplushealthcare.com.ng/prescriptions/get_drug_class_by_id/${selectedMedicineId}`
     );
     let data = await response.json();
+
+    // Hide loading spinner after the response
+    document.getElementById("loading2").style.display = "none";
 
     // Render data for the second input
     renderMedicineData(
@@ -136,6 +151,7 @@ async function fetchIntervalData(selectedMedicineId) {
       "search_medicinebrand_3" // Focus on the first duration input after the second is filled
     );
   } catch (error) {
+    document.getElementById("loading2").style.display = "none";
     console.error("Error fetching the interval data: ", error);
   }
 }
@@ -143,10 +159,16 @@ async function fetchIntervalData(selectedMedicineId) {
 // Fetch data for the third API (all medicines)
 async function fetchAllMedicineData() {
   try {
+    // Show loading spinner before making the API request
+    document.getElementById("loading3").style.display = "block";
+
     let response = await fetch(
       `https://cliniqueplushealthcare.com.ng/prescriptions/all_medicine`
     );
     let data = await response.json();
+
+    // Hide loading spinner after the response
+    document.getElementById("loading3").style.display = "none";
 
     // Render data for the third input, including instruction
     renderMedicineData(
@@ -160,7 +182,8 @@ async function fetchAllMedicineData() {
       "dividerinput" // next input to focus after the third input
     );
   } catch (error) {
-    console.error("Error fetching the all-medicine data: ", error);
+    document.getElementById("loading3").style.display = "none";
+    console.error("Error fetching the medicine data: ", error);
   }
 }
 
